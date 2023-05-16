@@ -1,0 +1,259 @@
+body{
+	box-sizing:border-box;
+	margin:0;
+	padding:0;
+}
+.wrapper{	
+	height:auto;
+	width: 100%;
+	margin: 0 auto;
+	padding:0;
+	font-family: "Sitka Display";
+}
+.header{
+	height: 150px;
+	width:100%;
+}
+#logo{
+	margin-right:2px;
+	border-radius: 5px;
+	width: 150px;
+	height:150px;
+	float:left;
+}
+#logo a img{
+	height:150px;
+	width:150px;
+}
+.background-header{
+	height: 150px;
+	width: 89%;
+	background-size:auto;
+	position: relative;
+	float:right;
+}
+.background-header img{
+	position: absolute;
+	top:0;
+	opacity:0;
+	animation: image-slider-animation 12s infinite;
+	height:150px;
+	width: 100%;
+	transition: ease-out 1s;
+}
+@keyframes image-slider-animation {
+  0%{
+  	opacity:1;
+  }
+  33.33%{
+  	opacity:0;
+  }
+  66.66%{
+  	opacity:0;
+  }
+  100%{
+  	opacity:1;
+  }
+}
+.background-header img:nth-child(1){
+	animation-delay: 0s;
+}
+.background-header img:nth-child(2) {
+  animation-delay: 4s;
+}
+.background-header img:nth-child(3) {
+  animation-delay: 8s;
+}
+
+.menu{
+	position:relative;
+	height: 50px;
+	background-color: #ff9900;
+	width:100%;
+}
+.list-menu{
+    list-style: none;
+    margin:0 auto;
+    padding: 0;
+    line-height: 50px;
+    height:50px;
+    text-align:center;
+}
+.list-menu li{
+	display:inline-block;
+	left: 30px;
+    padding: 0px 40px;
+    height:50px;
+    position:relative;
+}
+.list-menu li a{
+	text-decoration: none;
+	color: black;
+}
+.list-menu li:hover{
+	background: #995c00;
+	cursor: pointer;
+}
+.list-menu >li:hover >a{
+	font-size: 20px;
+	color:white;
+}
+.list-menu ul.mini-menu1{
+	position: absolute;
+	list-style: none;
+	padding:0;
+	background-color:#ff9900;
+	display:none;
+	left:0px;
+	margin-top:0;
+}
+.list-menu ul.mini-menu2{
+	position: absolute;
+	list-style: none;
+	padding:0;
+	background-color:#ff9900;
+	display:none;
+	left:0px;
+	margin-top:0;
+	z-index: 2;
+}
+.mini-menu1 li,.mini-menu2 li{
+	width: 80px;
+	left:0;
+	border-bottom: 1px solid black;
+}
+.mini-menu1 li:last-child,.mini-menu2 li:last-child{
+	border:none;
+}
+.list-menu li:hover >.mini-menu1,.list-menu li:hover>.mini-menu2{
+	display:block;
+}
+#main{
+	height:455px;
+	width:100%;
+}
+.sidebar{
+	border: 1px solid #ff0066;
+	width: 20%;
+	height: 450px;
+	margin-top:5px;
+	margin-left:5px;
+	float:left;
+	background-color:#ffff33;
+}
+.list-sidebar{
+	list-style:none;
+	padding:0;
+	margin:0;
+}
+.list-sidebar li{
+	width:100%;
+	padding: 20px 0px;
+}
+.list-sidebar li a{
+	text-decoration:none;
+	color:black;
+	display: block;
+}
+.list-sidebar li:hover{
+	background:#995c00;
+	cursor: pointer;
+}
+.list-sidebar >li:hover >a{
+	font-size:20px;
+	color:white;
+}
+.maincontent{
+	border: 1px solid #ff0066;
+	width: 78.5%;
+	height: 450px;
+	margin-top:5px;
+	margin-right:5px;
+	float:right;
+}
+#bestseller{
+	width: 70%;
+	float:left;
+}
+.maincontent >#bestseller >a >img{
+	width: 100%;
+	height:445px;
+	margin: 2.5px;
+	transition: transform ease 1s;
+}
+.maincontent >#bestseller >a >img:hover{
+	transform:scale(1.02);
+}
+.combo,.combo1{
+  position: relative;
+  width: 29%;
+  height: 222px; 
+  overflow: hidden;
+  float:right;
+  margin-top:2.5px;
+  margin-right:2.5px;
+  z-index: 1;
+}
+.combo a img,.combo1 a img{
+	width:100%;
+}
+
+.combo img,.combo1 img {
+  position: absolute;
+  width: 30%;
+  height: 100%;
+  opacity: 0;
+  animation: fade 9s infinite;
+  transition: transform ease 1s;
+}
+.maincontent .combo a img:hover,.maincontent .combo1 a img:hover{
+	transform: scale(1.2);
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  20% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.combo img:nth-child(1),.combo1 img:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.combo img:nth-child(2),.combo1 img:nth-child(2) {
+  animation-delay: 3s;
+}
+.clear,.clear1{
+	clear:both;
+}
+.pre-footer{
+	height:200px;
+	width:100%;
+	margin:10px 0px 5px 5px;
+	padding:0;
+}
+.pre-footer img{
+	width:99%;
+	height:200px;
+	border-radius: 5px;
+}
+.footer{
+	height:150px;
+	background-color:#ff9900;
+	width:99%;
+	padding:0;
+	margin:0 5px;
+}	
+.footer .contact{
+	padding:0;
+	margin-left: 20px;
+	height:100%;
+}
