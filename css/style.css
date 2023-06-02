@@ -206,7 +206,7 @@ body{
   animation: fade 9s infinite;
   transition: transform ease 1s;
 }
-.maincontent .combo a img:hover,.maincontent .combo1 a img:hover{
+.maincontent .combo a >img:hover,.maincontent .combo1 a >img:hover{
 	transform: scale(1.2);
 }
 @keyframes fade {

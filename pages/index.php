@@ -25,7 +25,7 @@
 		<div class="menu">
 			<ul class="list-menu">
 				<li><a href="index.php">Trang chủ</a></li>
-				<li><a href="page1.php">Thực đơn</a>
+				<li><a href="page1.php">Danh mục</a>
 					<ul class="mini-menu1">
 						<li><a href="#">Ăn vặt</a></li>
 						<li><a href="#">Đồ uống</a></li>
@@ -56,7 +56,7 @@
 			</div>
 			<div class="maincontent">
 				<div id="bestseller">
-					<a href="#">
+					<a href="#bestseller">
 						<img src="../images/best_seller.png" alt="bestseller">
 					</a>
 				</div>
